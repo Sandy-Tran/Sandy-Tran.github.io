@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "ITCAvantGardeStdBold";
+  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBold.otf");
+}
+@font-face {
+  font-family: "ITCAvantGardeStdBoldObl";
+  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBoldObl.otf");
+}
+@font-face {
+  font-family: "ITCAvantGardeStdBk";
+  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBk.otf");
+}
+@font-face {
+  font-family: "ITCAvantGardeStdBkCn";
+  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBkCn.otf");
+}
+@font-face {
+  font-family: "ITCAvantGardeStdMd";
+  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdMd.otf");
+}
+
+@import "./variables.scss";
+@import "./mixins.scss";
+
+body{
+  height:100%;
+}
+.container{
+  background-color: $black;
+}
+
+.title{
+  font-family: "ITCAvantGardeStdBold",sans-serif;
+  font-size: 2em;
+}
+.language{
+  font-family: "ITCAvantGardeStdBkCn", sans-serif;
+  font-size: 1em;
+
+}
+
+.parallax{
+  background-image: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/images/Background_image.jpg");
+  // height: 150vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* NAVBAR*/
+nav{
+  width: 100%;
+}
+.navbar{
+  background-color: $black;
+  height: 100px;
+}
+
+.navbar-toggler{
+  border: none;
+}
+.navbar-brand{
+  &:hover{
+    // box-shadow: 0px 5px 7px 0px rgba(255, 255, 255, 0.24);
+    background-color: $yellow;
+  }
+}
+.nav-link{
+  font-family: "ITCAvantGardeStdBold";
+  font-size: 2.5vh;
+  color: white;
+  background-color: $black;
+  &:hover{
+    color: $yellow;
+  }
+}
+/*FIN NAVBAR*/
+
+/*TRICHE*/
+#home{
+  height: 120px;
+  visibility: hidden;
+}
+
+#competences, #formation, #experiences, #portfolio, #activites, #apropos, #footer{
+  height: 150px;
+  visibility: hidden;
+}
+/*FIN TRICHE*/
+
+/*HOME*/
+.home{
+  font-family: "ITCAvantGardeStdBold",sans-serif;
+  color: $black;
+  height: 75vh;
+  margin: auto;
+  h1{
+    font-size: 3em;
+    margin-top: 40px;
+  }
+  h2{
+    font-size: 2em;
+    padding-top: 100px;
+  }
+}
+/*FIN HOME*/
+
+/*COMPETENCES*/
+.progress{
+  background-color: $black;
+}
+.progress-bar{
+  background-color: $yellow;
+  height: 10px;
+}
+/* FIN COMPETENCE*/
+
+/*TIMELINE*/
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box-timeline {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    padding: 80px 0 250px 0;
+    margin-bottom: 100px;
+}
+
+.ligne {
+    height: 500px;
+    width: 5px;
+    margin: 0 auto;
+    background: $yellow;
+}
+
+.rond {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: $yellow;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+/* 1000 - 160 + 80 / 3 =~ 306 */
+.r1{top: 80px;}
+.r2{top: 300px;}
+.r3{top: 520px;}
+
+.box {
+    color: white;
+    width: 300px;
+    min-height: 200px;
+    padding: 20px;
+    border-radius: 3px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.b1 {
+    top: 50px;
+    left: calc(50% + 250px);
+}
+.b2 {
+    top: 270px;
+    left: calc(50% - 250px);
+}
+.b3 {
+    top: 490px;
+    left: calc(50% + 250px);
+}
+.box h2{
+  font-family: "ITCAvantGardeStdBoldObl", sans-serif;
+  color: $yellow;
+  font-size: 20px;
+}
+.box p {
+    font-family: "ITCAvantGardeStdBk", sans-serif;
+    line-height: 10px;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .ligne {
+      display: none;
+  }
+  .rond {
+      display: none;
+  }
+  .box {
+      left: calc(65% - 55px)
+  }
+
+}
+/*FIN TIMELINE*/
+
+/*EXPERIENCES*/
+.exp{
+  background-color: $black;
+}
+.sstitre{
+  font-family: "ITCAvantGardeStdBk", sans-serif;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.job{
+  font-family: "ITCAvantGardeStdBoldObl", sans-serif;
+  font-size: 18px;
+  color: $yellow;
+}
+.texte{
+  font-family: "ITCAvantGardeStdBk", sans-serif;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+/*FIN EXPERIENCE*/
+
+/*A PROPOS*/
+.portrait{
+  height: 300px;
+}
+.propos{
+  font-family: "ITCAvantGardeStdBk", sans-serif;
+  font-size: 15px;
+}
+/*FIN A PROPOS*/
+
+/*FOOTER*/
+footer{
+  background-color: $black;
+  font-family: "ITCAvantGardeStdBk", sans-serif;
+  .logo img:hover{
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .home{
+    h1{
+      font-size: 6em;
+    }
+    h2{
+      font-size: 4em;
+    }
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
