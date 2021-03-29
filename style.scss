@@ -1,22 +1,22 @@
 @font-face {
   font-family: "ITCAvantGardeStdBold";
-  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBold.otf");
+  src: url("polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBold.otf");
 }
 @font-face {
   font-family: "ITCAvantGardeStdBoldObl";
-  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBoldObl.otf");
+  src: url("polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBoldObl.otf");
 }
 @font-face {
   font-family: "ITCAvantGardeStdBk";
-  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBk.otf");
+  src: url("polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBk.otf");
 }
 @font-face {
   font-family: "ITCAvantGardeStdBkCn";
-  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBkCn.otf");
+  src: url("polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdBkCn.otf");
 }
 @font-face {
   font-family: "ITCAvantGardeStdMd";
-  src: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdMd.otf");
+  src: url("polices/itc-avant-garde-gothic-std-cufonfonts/ITCAvantGardeStdMd.otf");
 }
 
 @import "./variables.scss";
@@ -40,7 +40,7 @@ body{
 }
 
 .parallax{
-  background-image: url("/Users/Paprikette/VirtualBox  VMs/Toni/Descodeuses/CV-BOOTSTRAP/images/Background_image.jpg");
+  background-image: url("images/Background_image.jpg");
   // height: 150vh;
   background-attachment: fixed;
   background-position: center;
